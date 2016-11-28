@@ -1,0 +1,22 @@
+{
+  "name": "Retweet-Meal-Project",
+  "homepage": "https://github.com/ivonajdenkoska/Retweet-Meal-Project",
+  "authors": [
+    "(ivonajdenkoska) (ukii) (1993Dajana)"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "1.5.x",
+    "jquery": "~2.0.3",
+    "angular-route": "~1.5"
+  }
+}
