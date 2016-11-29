@@ -1,26 +1,25 @@
 <!DOCTYPE html>
-<html lang="en" ng-app="retweetMealApp">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>Ретвитни оброк</title>
 
-    <link rel="bower_components/jquery"/>
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css"/>
 </head>
+<body onload="init()">
 
+    <div> HEADER + NAV</div>
+    <div id="view"></div>
+    <div> FOOTER </div>
 
-<body>
+<script src="bower_components/handlebars/handlebars.min.js"></script>
+<script src="bower_components/jquery/dist/jquery.min.js"></script>
+<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
 
-    <div ng-view></div>
+<script src="scripts/main.js"></script>
+<script src="scripts/router.js"></script>
+<script src="scripts/backend.js"></script>
+<script src="templates/precompiledTmps.js"></script>
 
-
-    <script src="bower_components/jquery/jquery.min.js"></script>
-    <script src="bower_components/angular/angular.js"></script>
-    <script src="bower_components/angular-route/angular-route.js"></script>
-
-    <script src="src/common/app.js"></script>
-    <script src="src/common/router.js"></script>
-
-    <script src="src/home/HomeController.js"></script>
 </body>
-
 </html>

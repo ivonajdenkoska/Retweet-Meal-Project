@@ -1,23 +1,18 @@
 {
-  "name": "reteet-meal-project",
+  "name": "retweet-meal",
   "version": "1.0.0",
-  "description": "Project for DIGIT Web - Design and Interactive Graphics in IT",
+  "description": "",
   "main": "Gruntfile.js",
-  "dependencies": {},
-  "devDependencies": {
-    "grunt": "^1.0.1"
-  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/ivonajdenkoska/Retweet-Meal-Project.git"
-  },
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/ivonajdenkoska/Retweet-Meal-Project/issues"
-  },
-  "homepage": "https://github.com/ivonajdenkoska/Retweet-Meal-Project#readme"
+  "devDependencies": {
+    "grunt-serve": "^0.1.6",
+    "grunt": "0.4.5",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-contrib-jshint": "^1.1.0",
+    "grunt-contrib-connect": "^1.0.2"
+  }
 }
