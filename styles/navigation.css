@@ -1,0 +1,52 @@
+.body-backgroud {
+    background-color: #ecf0f1;
+}
+
+.nav-style {
+    background: #f1c40f;
+    border-radius:0px;
+    border: none;
+}
+
+.logo-style {
+    width: 205px;
+    height: 40px;
+}
+
+.logo-padding {
+    padding-top: 9px;
+}
+
+.nav-padding {
+    padding: 0px 50px 0px 50px;
+}
+
+.nav-item {
+    margin-right: 10px;
+}
+
+.nav-link-style {
+    padding-top:14px !important;
+    color: white !important;
+    font-size: 14px;
+}
+
+.nav>li>a:focus,
+.nav>li>a:hover {
+    background-color: #f1c40f;
+    color:  #0033cc !important;
+}
+
+.row-color {
+    border-bottom: 3px solid #ff8c1a !important;
+    padding-bottom: 0px;
+}
+
+.active-tab {
+    border-bottom: 3px solid #ff8c1a;
+}
+
+.row-margins-nav {
+    margin: 0px;
+}
+

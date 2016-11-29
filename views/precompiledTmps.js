@@ -20,10 +20,13 @@ templates['aboutTemp'] = template({"1":function(container,depth0,helpers,partial
   if (stack1 != null) { buffer += stack1; }
   return buffer + "</ul>";
 },"useData":true});
+templates['calendarTemp'] = template({"compiler":[7,">= 4.0.0"],"main":function(container,depth0,helpers,partials,data) {
+    return "";
+},"useData":true});
 templates['contactTemp'] = template({"compiler":[7,">= 4.0.0"],"main":function(container,depth0,helpers,partials,data) {
-    return "\r\n<h1>Ova mi e contact</h1>\r\n<button class=\"btn-danger\">Holy moly!</button>";
+    return "\r\n<h1>Ova mi e contact</h1>\r\n<button type=\"button\" class=\"btn btn-danger\">Action</button>\r\n";
 },"useData":true});
 templates['homeTemp'] = template({"compiler":[7,">= 4.0.0"],"main":function(container,depth0,helpers,partials,data) {
-    return "<h1>Home, sweet home!</h1>";
+    return "<h1>Home!</h1>\r\n";
 },"useData":true});
 })();
