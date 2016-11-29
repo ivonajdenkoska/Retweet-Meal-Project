@@ -1,0 +1,25 @@
+/* Buttons */
+.btns-style {
+    color: wheat;
+    border-radius: 0px;
+    width: 190px;
+    height: 40px;
+}
+
+.doniraj-btn {
+    background-color: #3498db;
+}
+
+.zgotvi-btn {
+    background-color: #c0392b;
+}
+
+.btn-postion {
+    padding-bottom: 20px;
+}
+
+.buttons-group {
+    height: 200px;
+    text-align: right;
+    padding: 50px 200px 0px 0px;
+}

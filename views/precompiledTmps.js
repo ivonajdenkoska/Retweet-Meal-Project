@@ -27,6 +27,6 @@ templates['contactTemp'] = template({"compiler":[7,">= 4.0.0"],"main":function(c
     return "\r\n<h1>Ova mi e contact</h1>\r\n<button type=\"button\" class=\"btn btn-danger\">Action</button>\r\n";
 },"useData":true});
 templates['homeTemp'] = template({"compiler":[7,">= 4.0.0"],"main":function(container,depth0,helpers,partials,data) {
-    return "<h1>Home!</h1>\r\n";
+    return "<div class=\"buttons-group\">\r\n  <div class=\"btn-postion\">\r\n    <button class=\"btn btns-style doniraj-btn\">ДОНИРАЈ</button>\r\n  </div>\r\n  <div>\r\n     <button class=\"btn btns-style zgotvi-btn\">ЗГОТВИ</button>\r\n  </div>\r\n</div>";
 },"useData":true});
 })();
