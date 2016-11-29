@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ретвитни оброк</title>
+
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="fonts/font-awesome-4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="styles/navigation.css"/>
+    <link rel="stylesheet" href="styles/footer.css"/>
+    <link rel="stylesheet" href="styles/main-page.css"/>
+
+    <style>
+
+        .step-txt {
+            color: #34495e;
+            text-align: center;
+        }
+
+        .imgs-pos {
+            padding-left: 100px;
+        }
+
+        .img-steps-style {
+            width: 160px;
+            height: 130px;
+        }
+
+        .main-img{
+            width: 100%;
+            height: 400px;
+        }
+
+        .buttons-group {
+
+        }
+
+
+    </style>
+</head>
+<body onload="init()" class="body-backgroud">
+    <div class="row-color">
+        <nav class="navbar row-margins-nav nav-style">
+            <div class="nav-padding">
+                <div class="navbar-header">
+                    <a class="navbar-brand logo-padding" href="">
+                        <img alt="Brand" src="./img/white-text-logo.png" class="logo-style">
+                    </a>
+                </div>
+                <div>
+                    <ul class="nav navbar-nav pull-right">
+                        <li class="nav-item active-tab"><a href="" class="nav-link-style">За нас</a></li>
+                        <li class="nav-item"><a href="" class="nav-link-style">Календар на настани</a></li>
+                        <li class="nav-item"><a href="" class="nav-link-style">Минати настани</a></li>
+                        <li class="nav-item"><a href="" class="nav-link-style">Контакт</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <div class="row">
+        <img src="img/2.jpg" class="main-img">
+        <div class="buttons-group">
+            <div class="btn-postion">
+                <button class="btn btns-style doniraj-btn">ДОНИРАЈ</button>
+            </div>
+            <div>
+                <button class="btn btns-style zgotvi-btn">ЗГОТВИ</button>
+            </div>
+        </div>
+    </div>
+    <div class="row imgs-pos">
+        <div class="steps-title-style">
+            Како функционираме?
+        </div>
+        <div class="col-md-2">
+            <img src="img/steps/1.png" class="img-steps-style" >
+            <p class="step-txt">Пријави се</p>
+        </div>
+        <div class="col-md-2">
+            <img src="img/steps/2.png" class="img-steps-style" >
+            <p class="step-txt">Подготви ги намирниците</p>
+        </div>
+        <div class="col-md-2">
+            <img src="img/steps/3.png" class="img-steps-style" >
+            <p class="step-txt">Донирај</p>
+        </div>
+        <div class="col-md-2">
+            <img src="img/steps/4.png" class="img-steps-style" >
+            <p class="step-txt">Зготви</p>
+        </div>
+        <div class="col-md-2">
+            <img src="img/steps/5.png" class="img-steps-style" >
+            <p class="step-txt">Сподели оброк</p>
+        </div>
+    </div>
+    
+    <div id="view"></div>
+    <div>
+        <footer>
+            <div class="row footer-style">
+                <div class="col-md-4 left-footer">
+                    Copyrights &copy; Team 7 <br/>
+                    Faculty of Computer Science and Engineering
+                </div>
+                <div class="col-md-4">
+                    <ul class="footer-menu">
+                        <li class="nav-item active-tab"><a href="" class="nav-link-style">За нас</a></li>
+                        <li class="nav-item"><a href="" class="nav-link-style">Календар на настани</a></li>
+                        <li class="nav-item"><a href="" class="nav-link-style">Минати настани</a></li>
+                        <li class="nav-item"><a href="" class="nav-link-style">Контакт</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <div class="icons">
+                        <a href="#"><i class="fa fa-facebook-official icon-style"></i></a>
+                        <a href="#"><i class="fa fa-twitter-square icon-style"></i></a>
+                        <a href="#"><i class="fa fa-linkedin-square icon-style"></i></a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+<script src="bower_components/handlebars/handlebars.min.js"></script>
+<script src="bower_components/jquery/dist/jquery.min.js"></script>
+<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+
+<script src="scripts/main.js"></script>
+<script src="scripts/router.js"></script>
+<script src="scripts/backend.js"></script>
+<script src="views/precompiledTmps.js"></script>
+
+</body>
+</html>
