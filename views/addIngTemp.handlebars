@@ -1,0 +1,236 @@
+<div class="container">
+    <ul id="listaTabovi" class="nav nav-pills">
+        <li class="active"><a data-toggle="pill" href="#indiv">Индивидуа</a></li>
+        <li><a data-toggle="pill" href="#komp" >Компанија</a></li>
+    </ul>
+
+    <div class="tab-content">
+        <div id="indiv" class="tab-pane fade in active">
+            <form class="forma">
+                <span class="input input--hoshi">
+					<input class="input__field input__field--hoshi" type="text" id="input-1"/>
+					<label class="input__label input__label--hoshi input__label--hoshi-color-1" for="input-1">
+						<span class="input__label-content input__label-content--hoshi">Име :</span>
+					</label>
+				</span><br>
+                <span class="input input--hoshi">
+					<input class="input__field input__field--hoshi" type="text" id="input-2"/>
+					<label class="input__label input__label--hoshi input__label--hoshi-color-1" for="input-2">
+						<span class="input__label-content input__label-content--hoshi">Презиме :</span>
+					</label>
+				</span><br>
+                <span class="input input--hoshi">
+					<input class="input__field input__field--hoshi" type="number" id="input-3"/>
+					<label class="input__label input__label--hoshi input__label--hoshi-color-1" for="input-3">
+						<span class="input__label-content input__label-content--hoshi">Тел. Број :</span>
+					</label>
+				</span><br>
+                <span class="input input--hoshi">
+					<input class="input__field input__field--hoshi" type="email" id="input-4"/>
+					<label class="input__label input__label--hoshi input__label--hoshi-color-1" for="input-4">
+						<span class="input__label-content input__label-content--hoshi">Е-Маил :</span>
+					</label>
+				</span><br>
+                <br>
+                <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample"
+                        aria-expanded="false" aria-controls="collapseExample">
+                    Одбери датум
+                </button>
+                <div class="collapse" id="collapseExample">
+                    <div class="well well-sm ">
+                        <div class="list-group">
+                            <a href="#" class="list-group-item" value="nesto">First item</a>
+                            <a href="#" class="list-group-item">Second item</a>
+                            <a href="#" class="list-group-item">Third item</a>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <br>
+                <label>Донирај :</label>
+                <div class="checkbox">
+                    <label><input type="checkbox" id="kopceNam">Намирници</label>
+                </div>
+                <div class="checkbox">
+                    <label><input type="checkbox" id="kopceGot">Готова Храна</label>
+                </div>
+                <div id="listaNam">
+                    <ul>
+                        <li>
+                            <table id="tableNam">
+                                <tr>
+                                    <td class="input input--hoshi">
+                                        <input class="input__field input__field--hoshi" type="email" id="input-10"/>
+                                        <label class="input__label input__label--hoshi input__label--hoshi-color-1"
+                                               for="input-10">
+                                            <span class="input__label-content input__label-content--hoshi">Име :</span>
+                                        </label>
+                                    </td>
+                                    <td class="input input--hoshi kolicina">
+                                        <input class="input__field input__field--hoshi " type="number" id="input-20"/>
+                                        <label class="input__label input__label--hoshi input__label--hoshi-color-1 kolicina"
+                                               for="input-20">
+                                            <span class="input__label-content input__label-content--hoshi">Количина :</span>
+                                        </label>
+                                    </td>
+                                </tr>
+                            </table>
+                        </li>
+                    </ul>
+                    <button id="addNamir">Додади намирници</button>
+                </div>
+                <div id="listaGot">
+                    <ul>
+                        <li>
+                            <table id="tableGot">
+                                <tr>
+                                    <td class="input input--hoshi">
+                                        <input class="input__field input__field--hoshi" type="email" id="input-30"/>
+                                        <label class="input__label input__label--hoshi input__label--hoshi-color-1"
+                                               for="input-30">
+                                            <span class="input__label-content input__label-content--hoshi">Храна :</span>
+                                        </label>
+                                    </td>
+                                    <td class="input input--hoshi kolicina">
+                                        <input class="input__field input__field--hoshi" type="number" id="input-40"/>
+                                        <label class="input__label input__label--hoshi input__label--hoshi-color-1 kolicina"
+                                               for="input-40">
+                                            <span class="input__label-content input__label-content--hoshi">Количина :</span>
+                                        </label>
+                                    </td>
+                                </tr>
+                            </table>
+                        </li>
+                    </ul>
+                    <button id="addHrana">Додади храна</button>
+                </div>
+                <br>
+                <button type="submit" class="btn btn-default" id="kopceForma1">Submit</button>
+            </form>
+        </div>
+        <div id="komp" class="tab-pane fade">
+            <form class="forma">
+                <span class="input input--hoshi">
+					<input class="input__field input__field--hoshi" type="text" id="input-5"/>
+					<label class="input__label input__label--hoshi input__label--hoshi-color-1" for="input-5">
+						<span class="input__label-content input__label-content--hoshi">Име</span>
+					</label>
+				</span><br>
+                <span class="input input--hoshi">
+					<input class="input__field input__field--hoshi" type="text" id="input-6"/>
+					<label class="input__label input__label--hoshi input__label--hoshi-color-1" for="input-6">
+						<span class="input__label-content input__label-content--hoshi">Адреса</span>
+					</label>
+				</span><br>
+                <span class="input input--hoshi">
+					<input class="input__field input__field--hoshi" type="number" id="input-7"/>
+					<label class="input__label input__label--hoshi input__label--hoshi-color-1" for="input-7">
+						<span class="input__label-content input__label-content--hoshi">Тел. Број</span>
+					</label>
+				</span><br>
+                <span class="input input--hoshi">
+					<input class="input__field input__field--hoshi" type="email" id="input-8"/>
+					<label class="input__label input__label--hoshi input__label--hoshi-color-1" for="input-8">
+						<span class="input__label-content input__label-content--hoshi">Е-Маил</span>
+					</label>
+				</span>
+                <br><br>
+                <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#kalendar2"
+                        aria-expanded="false" aria-controls="kalendar2">
+                    Одбери датум
+                </button>
+                <div class="collapse" id="kalendar2">
+                    <div class="well well-sm">
+                        <ul class="list-group" id="listaDatumi">
+                            <li><a href="#" class="list-group-item">First item</a></li>
+                            <li><a href="#" class="list-group-item">Second item</a></li>
+                            <li><a href="#" class="list-group-item">Third item</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <br><br>
+                <label>Донирај :</label>
+                <div class="checkbox">
+                    <label><input type="checkbox" value="" id="kopceNamKom">Намирници</label>
+                </div>
+                <div class="checkbox">
+                    <label><input type="checkbox" value="" id="kopceGotKom">Готова Храна</label>
+                </div>
+                <div id="listaNamKom">
+                    <ul>
+                        <li>
+                            <table id="tableNamKom">
+                                <tr>
+                                    <td class="input input--hoshi">
+                                        <input class="input__field input__field--hoshi" type="text" id="input-22"/>
+                                        <label class="input__label input__label--hoshi input__label--hoshi-color-1"
+                                               for="input-22">
+                                            <span class="input__label-content input__label-content--hoshi">Храна :</span>
+                                        </label>
+                                    </td>
+                                    <td class="input input--hoshi kolicina">
+                                        <input class="input__field input__field--hoshi" type="number" id="input-33"/>
+                                        <label class="input__label input__label--hoshi input__label--hoshi-color-1 kolicina"
+                                               for="input-33">
+                                            <span class="input__label-content input__label-content--hoshi">Количина :</span>
+                                        </label>
+                                    </td>
+                                </tr>
+                            </table>
+                        </li>
+                    </ul>
+                    <button id="addNamirKom">Додади намирници</button>
+                </div>
+                <div id="listaGotKom">
+                    <ul>
+                        <li>
+                            <table id="tableGotKom">
+                                <tr>
+                                    <td class="input input--hoshi">
+                                        <input class="input__field input__field--hoshi" type="text" id="input-44"/>
+                                        <label class="input__label input__label--hoshi input__label--hoshi-color-1"
+                                               for="input-44">
+                                            <span class="input__label-content input__label-content--hoshi">Храна :</span>
+                                        </label>
+                                    </td>
+                                    <td class="input input--hoshi kolicina">
+                                        <input class="input__field input__field--hoshi" type="number" id="input-55"/>
+                                        <label class="input__label input__label--hoshi input__label--hoshi-color-1 kolicina"
+                                               for="input-55">
+                                            <span class="input__label-content input__label-content--hoshi">Количина :</span>
+                                        </label>
+                                    </td>
+                                </tr>
+                            </table>
+                        </li>
+                    </ul>
+                    <button id="addHranaKom">Додади храна</button>
+                </div>
+                <br>
+                <button type="submit" class="btn btn-default" id="kopceForma2">Submit</button>
+            </form>
+        </div>
+    </div>
+</div>
+<div id="myModal" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Modal Header</h4>
+            </div>
+            <div class="modal-body">
+                <h5>Немате внесено :</h5><br>
+                <ul id="listModal">
+
+                </ul>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+
+    </div>
+</div>

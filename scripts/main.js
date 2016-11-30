@@ -26,6 +26,14 @@ function getTemplate(templateId) {
             // no template for contact - for now
             temp = Handlebars.templates['contactTemp'];
             break;
+        case "donate":
+            // no template for contact - for now
+            temp = Handlebars.templates['addIngTemp'];
+            break;
+        case "contact":
+            // no template for contact - for now
+            temp = Handlebars.templates['cookTemp'];
+            break;
         default:
             temp = Handlebars.templates['homeTemp'];
     }

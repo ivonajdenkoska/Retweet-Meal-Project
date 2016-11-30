@@ -1,0 +1,27 @@
+input {
+    border: 0;
+    outline: 0;
+    /*background: transparent;*/
+    border-bottom: 2px solid #156D9E;
+    /*border-color: #083f5e;*/
+    margin-right: 10px;
+
+}
+
+li {
+    list-style: none;
+    width:200px;
+}
+table{
+    width: 900px;
+}
+tr {
+    width: 800px;
+}
+.forma {
+    margin-bottom: 50px;
+}
+.kolicina{
+    width: 200px;
+}
+

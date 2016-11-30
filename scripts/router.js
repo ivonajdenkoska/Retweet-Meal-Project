@@ -26,6 +26,14 @@ function registerAllRoutes() {
     registerRoute('/contact', 'contact', function () {
         console.log('contact')
     });
+
+    registerRoute('/donate', 'donate', function () {
+        console.log('contact')
+    });
+
+    registerRoute('/cook', 'cook', function () {
+        console.log('contact')
+    });
 }
 
 var contentElement = null;
