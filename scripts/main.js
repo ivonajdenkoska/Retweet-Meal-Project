@@ -18,6 +18,10 @@ function getTemplate(templateId) {
             var data = getAboutUsData();
             var temp = Handlebars.templates['aboutTemp'];
             break;
+        case "gallery":
+            var data = getGalleryImages();
+            temp = Handlebars.templates['galleryTemp'];
+            break;
         case "contact":
             // no template for contact - for now
             temp = Handlebars.templates['contactTemp'];

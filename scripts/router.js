@@ -15,6 +15,14 @@ function registerAllRoutes() {
         console.log('about us');
     });
 
+    registerRoute('/calendar', 'calendar', function () {
+        console.log('calendar');
+    });
+
+    registerRoute('/gallery', 'gallery', function () {
+        console.log('gallery');
+    });
+
     registerRoute('/contact', 'contact', function () {
         console.log('contact')
     });
@@ -32,6 +40,11 @@ function router () {
     if (contentElement && route) {
         var filledTemplate = getTemplate(route.tmpId);
         contentElement.innerHTML = filledTemplate;
+        // contentElement.addEventListener('click',
+        //     function(event) {
+        //        setPrevMonth(event);
+        //     }
+        // );
     } else if (route == null) {
         // change to default one :)
         window.location.hash = '#/';
@@ -45,6 +58,3 @@ function router () {
 // just for this
 window.addEventListener('hashchange', router);
 window.addEventListener('load', router);
-
-
-

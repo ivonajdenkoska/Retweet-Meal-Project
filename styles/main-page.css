@@ -10,6 +10,7 @@
 .doniraj-btn {
     background-color: #ecf0f1;
     color: #0f0f0f;
+    border: 4px solid #c0392b;
 }
 
 .doniraj-btn:hover {
@@ -18,6 +19,10 @@
 
 .zgotvi-btn {
     background-color: #c0392b;
+}
+
+.zgotvi-btn:hover {
+    background-color:#D95E51;
 }
 
 .btn-postion {
@@ -41,6 +46,7 @@
 }
 
 .imgs-pos {
+    height: 280px;
     padding: 0px 0px 80px 160px;
 }
 
@@ -49,6 +55,12 @@
     height: 130px;
     opacity: 0.8;
 }
+
+.img-steps-style:hover {
+    zoom: 150%;
+    opacity: 0.9;
+}
+
 
 .steps-title-style {
     font-size: 25px;
