@@ -1,24 +1,7 @@
 (function() {
   var template = Handlebars.template, templates = Handlebars.templates = Handlebars.templates || {};
-templates['aboutTemp'] = template({"1":function(container,depth0,helpers,partials,data) {
-    var helper, alias1=depth0 != null ? depth0 : {}, alias2=helpers.helperMissing, alias3="function", alias4=container.escapeExpression;
-
-  return "        <li>\r\n            <h3>Name: "
-    + alias4(((helper = (helper = helpers.name || (depth0 != null ? depth0.name : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"name","hash":{},"data":data}) : helper)))
-    + " </h3>\r\n            <h2>Age: "
-    + alias4(((helper = (helper = helpers.age || (depth0 != null ? depth0.age : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"age","hash":{},"data":data}) : helper)))
-    + " </h2>\r\n            <h2>Email: "
-    + alias4(((helper = (helper = helpers.email || (depth0 != null ? depth0.email : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"email","hash":{},"data":data}) : helper)))
-    + " </h2>\r\n            <h2>Some change alright!</h2>\r\n            <h3 style=\"color:red\">Next change</h3>\r\n        </li>\r\n";
-},"compiler":[7,">= 4.0.0"],"main":function(container,depth0,helpers,partials,data) {
-    var stack1, helper, options, alias1=depth0 != null ? depth0 : {}, alias2=helpers.helperMissing, alias3="function", buffer = 
-  "<h1>"
-    + container.escapeExpression(((helper = (helper = helpers.title || (depth0 != null ? depth0.title : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"title","hash":{},"data":data}) : helper)))
-    + "</h1>\r\n<ul>\r\n";
-  stack1 = ((helper = (helper = helpers.people || (depth0 != null ? depth0.people : depth0)) != null ? helper : alias2),(options={"name":"people","hash":{},"fn":container.program(1, data, 0),"inverse":container.noop,"data":data}),(typeof helper === alias3 ? helper.call(alias1,options) : helper));
-  if (!helpers.people) { stack1 = helpers.blockHelperMissing.call(depth0,stack1,options)}
-  if (stack1 != null) { buffer += stack1; }
-  return buffer + "</ul>";
+templates['aboutTemp'] = template({"compiler":[7,">= 4.0.0"],"main":function(container,depth0,helpers,partials,data) {
+    return "<div class=\"container main-padding\">\r\n    <div class=\"row rows-padding\">\r\n        <div class=\"col-md-6 about-cells-2   elements-margin \">\r\n            <p class=\"text-style\">\r\n                <strong class=\"main-words\">Ретвитни оброк</strong> е иницијатива (формирана на Твитер) на аматери готвачи\r\n                кои сакаат да споделуваат храна, не само на Интернет. <br/>\r\n\r\n            </p>\r\n        </div>\r\n        <div class=\"col-md-3 about-img-1 elements-margin \">\r\n            <img src=\"img/about/2.png\" class=\"img-circle about-img-1\">\r\n        </div>\r\n        <div class=\"col-md-3 about-img-1 elements-margin \">\r\n            <img src=\"img/about/4.png\" class=\"img-circle about-img-1\">\r\n        </div>\r\n    </div>\r\n    <div class=\"row rows-padding\">\r\n        <div class=\"col-md-3 about-img-1 elements-margin \">\r\n            <img src=\"img/about/1.png\" class=\"img-circle about-img-1\">\r\n        </div>\r\n        <div class=\"col-md-3 about-img-1 elements-margin \">\r\n            <img src=\"img/about/5.png\" class=\"img-circle about-img-1\">\r\n        </div>\r\n        <div class=\"col-md-6 about-cells-2 elements-margin \">\r\n            <p class=\"text-style\">\r\n                <strong class=\"main-words\">Што сакаме да направиме?</strong><br/> Да ја подигнеме свеста на луѓето и да стигнеме до момент храната која останува при готвење\r\n                да не се фрла, туку да се споделува со оние кои немаат.\r\n            </p>\r\n        </div>\r\n    </div>\r\n    <div class=\"row rows-padding\">\r\n        <div class=\"col-md-3 about-img-1 elements-margin \">\r\n            <img src=\"img/about/3.png\" class=\"img-circle about-img-1\">\r\n        </div>\r\n        <div class=\"col-md-3 about-cells-1 elements-margin \">\r\n            <p class=\"text-style\">\r\n                <strong class=\"main-words\">Локација</strong>: Пред спомен-куќата на Мајка Тереза. <br/>\r\n                <strong class=\"main-words\">Ден</strong>: Секоја сабота. <br/>\r\n                <strong class=\"main-words\">Време</strong>: 13:00  <br/>\r\n            </p>\r\n        </div>\r\n        <div class=\"col-md-3 about-img-1 elements-margin \">\r\n            <img src=\"img/about/3.png\" class=\"img-circle about-img-1\">\r\n        </div>\r\n        <div class=\"col-md-3 about-cells-1 elements-margin \">\r\n            <p class=\"text-style-last\">\r\n                <strong class=\"main-words\">37</strong> недели готвење.<br/>\r\n                <strong class=\"main-words\">110</strong> оброци неделно.<br/>\r\n                До сега <strong class=\"main-words\">4070</strong> споделени оброци.\r\n            </p>\r\n        </div>\r\n    </div>\r\n\r\n</div>\r\n";
 },"useData":true});
 templates['calendarTemp'] = template({"compiler":[7,">= 4.0.0"],"main":function(container,depth0,helpers,partials,data) {
     return "";
