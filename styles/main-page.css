@@ -13,7 +13,9 @@
     border: 3px solid #c0392b;
 }
 
-.doniraj-btn:hover {
+.doniraj-btn:hover,
+.doniraj-btn:visited,
+.doniraj-btn:focus {
     background-color: #c0392b;
     color: #fcf8e3;
 }

@@ -2,20 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="30923333-c234-4271-8454-b036d48b8832" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/cookScript.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/customScript.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/styles/addIngs.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/styles/cook.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/addIngTemp.handlebars" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/cookTemp.handlebars" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/graphics.js" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/styles/demo.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/styles/normalize.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/styles/set1.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/styles/set2.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/main.js" afterPath="$PROJECT_DIR$/scripts/main.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/router.js" afterPath="$PROJECT_DIR$/scripts/router.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/styles/main-page.css" afterPath="$PROJECT_DIR$/styles/main-page.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/homeTemp.handlebars" afterPath="$PROJECT_DIR$/views/homeTemp.handlebars" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/precompiledTmps.js" afterPath="$PROJECT_DIR$/views/precompiledTmps.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -37,36 +30,64 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="450">
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="9" column="3" selection-start-line="9" selection-start-column="3" selection-end-line="9" selection-end-column="3" />
+            <state relative-caret-position="400">
+              <caret line="16" column="43" selection-start-line="16" selection-start-column="43" selection-end-line="16" selection-end-column="43" />
               <folding>
-                <element signature="e#1870#1876#0" expanded="true" />
+                <element signature="e#1920#1926#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main-page.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/styles/main-page.css">
+      <file leaf-file-name="set2.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/styles/set2.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="200">
-              <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+            <state relative-caret-position="768">
+              <caret line="975" column="1" selection-start-line="975" selection-start-column="1" selection-end-line="975" selection-end-column="1" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="cookTemp.handlebars" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/views/cookTemp.handlebars">
+      <file leaf-file-name="set1.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/styles/set1.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1900">
-              <caret line="76" column="6" selection-start-line="76" selection-start-column="6" selection-end-line="76" selection-end-column="6" />
-              <folding>
-                <element signature="e#2829#2836#0#HTML" expanded="true" />
-              </folding>
+            <state relative-caret-position="768">
+              <caret line="1102" column="1" selection-start-line="1102" selection-start-column="1" selection-end-line="1102" selection-end-column="1" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="demo.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/styles/demo.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="768">
+              <caret line="205" column="0" selection-start-line="205" selection-start-column="0" selection-end-line="205" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="normalize.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/styles/normalize.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="318">
+              <caret line="152" column="0" selection-start-line="152" selection-start-column="0" selection-end-line="152" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main-page.css" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/styles/main-page.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="425">
+              <caret line="17" column="18" selection-start-line="17" selection-start-column="18" selection-end-line="17" selection-end-column="18" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -74,8 +95,8 @@
       <file leaf-file-name="homeTemp.handlebars" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/homeTemp.handlebars">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="9" column="10" selection-start-line="9" selection-start-column="10" selection-end-line="9" selection-end-column="10" />
+            <state relative-caret-position="200">
+              <caret line="8" column="12" selection-start-line="8" selection-start-column="12" selection-end-line="8" selection-end-column="12" />
               <folding />
             </state>
           </provider>
@@ -101,26 +122,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="addIngs.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/styles/addIngs.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="675">
-              <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="cook.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/styles/cook.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="customScript.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/scripts/customScript.js">
           <provider selected="true" editor-type-id="text-editor">
@@ -131,25 +132,13 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="cookScript.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/scripts/cookScript.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="805">
-              <caret line="119" column="3" selection-start-line="119" selection-start-column="3" selection-end-line="119" selection-end-column="3" />
-              <folding>
-                <element signature="e#6588#6629#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
     </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="CSS File" />
         <option value="JavaScript File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -173,7 +162,6 @@
         <option value="$PROJECT_DIR$/views/galleryTemp.handlebars" />
         <option value="$PROJECT_DIR$/views/contactTemp.handlebars" />
         <option value="$PROJECT_DIR$/scripts/backend.js" />
-        <option value="$PROJECT_DIR$/styles/main-page.css" />
         <option value="$PROJECT_DIR$/views/addIngTemp.handlebars" />
         <option value="$PROJECT_DIR$/views/cookTemp.handlebars" />
         <option value="$PROJECT_DIR$/styles/addIngs.css" />
@@ -183,7 +171,12 @@
         <option value="$PROJECT_DIR$/views/homeTemp.handlebars" />
         <option value="$PROJECT_DIR$/scripts/router.js" />
         <option value="$PROJECT_DIR$/scripts/main.js" />
+        <option value="$PROJECT_DIR$/styles/set2.css" />
+        <option value="$PROJECT_DIR$/styles/set1.css" />
+        <option value="$PROJECT_DIR$/styles/demo.css" />
+        <option value="$PROJECT_DIR$/styles/normalize.css" />
         <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/styles/main-page.css" />
       </list>
     </option>
   </component>
@@ -766,12 +759,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1480507148003</updated>
-      <workItem from="1480507161403" duration="15693000" />
+      <workItem from="1480507161403" duration="16669000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="18021000" />
+    <option name="totallyTimeSpent" value="18997000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
@@ -830,7 +823,7 @@
         <state relative-caret-position="1025">
           <caret line="41" column="22" selection-start-line="41" selection-start-column="22" selection-end-line="41" selection-end-column="22" />
           <folding>
-            <element signature="e#1870#1876#0" expanded="true" />
+            <element signature="e#1920#1926#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -880,7 +873,7 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#1870#1876#0" expanded="true" />
+            <element signature="e#1920#1926#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1079,14 +1072,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/homeTemp.handlebars">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="9" column="10" selection-start-line="9" selection-start-column="10" selection-end-line="9" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/scripts/main.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="705">
@@ -1103,21 +1088,61 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/styles/main-page.css">
+    <entry file="file://$PROJECT_DIR$/styles/demo.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="768">
+          <caret line="205" column="0" selection-start-line="205" selection-start-column="0" selection-end-line="205" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/styles/normalize.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="318">
+          <caret line="152" column="0" selection-start-line="152" selection-start-column="0" selection-end-line="152" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/styles/set1.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="768">
+          <caret line="1102" column="1" selection-start-line="1102" selection-start-column="1" selection-end-line="1102" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/styles/set2.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="768">
+          <caret line="975" column="1" selection-start-line="975" selection-start-column="1" selection-end-line="975" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/homeTemp.handlebars">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="200">
-          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+          <caret line="8" column="12" selection-start-line="8" selection-start-column="12" selection-end-line="8" selection-end-column="12" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="9" column="3" selection-start-line="9" selection-start-column="3" selection-end-line="9" selection-end-column="3" />
+        <state relative-caret-position="400">
+          <caret line="16" column="43" selection-start-line="16" selection-start-column="43" selection-end-line="16" selection-end-column="43" />
           <folding>
-            <element signature="e#1870#1876#0" expanded="true" />
+            <element signature="e#1920#1926#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/styles/main-page.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="17" column="18" selection-start-line="17" selection-start-column="18" selection-end-line="17" selection-end-column="18" />
+          <folding />
         </state>
       </provider>
     </entry>
