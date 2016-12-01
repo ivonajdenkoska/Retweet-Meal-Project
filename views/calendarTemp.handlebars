@@ -1,0 +1,41 @@
+<link rel="stylesheet" href="./styles/calendar.css"/>
+
+<div class="container">
+    <div id="title" class="row">
+        <!--<i class="glyphicon glyphicon-triangle-left"></i>-->
+        <label id="month">{{currentMonth.name}}</label>
+        <!--<i class="glyphicon glyphicon-triangle-right"></i>-->
+    </div>
+    <div class="row row-calendar">
+        <ul class="list-group col-md-2">
+            <li class="list-group-item">First item</li>
+            <li class="list-group-item">Second item</li>
+            <li class="list-group-item">Third item</li>
+        </ul>
+        <table class="col-md-10">
+            <thead>
+            <tr>
+                <th class="calendar-cell">Пон</th>
+                <th class="calendar-cell">Вто</th>
+                <th class="calendar-cell">Сре</th>
+                <th class="calendar-cell">Чет</th>
+                <th class="calendar-cell">Пет</th>
+                <th class="calendar-cell">Саб</th>
+                <th class="calendar-cell">Нед</th>
+            </tr>
+            </thead>
+            <tbody>
+            {{#rows}}
+               <tr>
+               {{#row}}
+                   <td class="calendar-cell data-cell">
+                       {{date}}
+                   </td>
+               {{/row}}
+               </tr>
+            {{/rows}}
+            </tbody>
+        </table>
+    </div>
+</div>
+

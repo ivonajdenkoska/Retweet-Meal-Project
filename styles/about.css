@@ -5,23 +5,31 @@
 .rows-padding {
     padding-bottom: 10px;
 }
+
+@media (min-width: 992px) {
+    .col-md-3 {
+        width: auto;
+    }
+}
+
 /* preku edna kocka */
 .about-cells-1 {
-    height: 150px;
+    height: 100%;
     width: 160px;
     background-color: #d35b00;
-
+    border-radius: 10px;
 }
 /* preku dve kocki */
 .about-cells-2 {
-    height: 150px;
+    height: 100%;
     width: 327px;
     background-color: #f78e04;
+    border-radius: 10px;
 }
 
 .about-img-1 {
-    height: 150px;
-    width: 160px;
+    /*height: 150px;*/
+    /*width: 160px;*/
     opacity: 0.8;
 }
 
@@ -49,3 +57,24 @@
 .main-words {
     font-size: 20px;
 }
+
+@media (min-width: 992px) {
+    .col-md-3 {
+         /*width: 1%;*/
+    }
+}
+
+.about-text {
+    padding: 30px;
+}
+
+/* centered columns */
+.col-centered {
+    display:inline-block;
+    float:none;
+    /* reset the text-align */
+    text-align:left;
+    /* inline-block space fix */
+    margin-right:-4px;
+}
+

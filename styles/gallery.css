@@ -52,3 +52,7 @@ div#columns:hover figure:not(:hover) {
     #columns { column-gap: 0px; }
     #columns figure { width: 100%; }
 }
+
+div#columns{
+    margin-top:0px;
+}

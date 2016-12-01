@@ -1,41 +1,53 @@
-<div class="container">
+<link rel="stylesheet" href="./styles/addIngs.css">
+<link rel="stylesheet" href="./styles/set1.css">
+
+<div class="container" id="donateForm">
     <ul id="listaTabovi" class="nav nav-pills">
         <li class="active"><a data-toggle="pill" href="#indiv">Индивидуа</a></li>
         <li><a data-toggle="pill" href="#komp" >Компанија</a></li>
     </ul>
 
     <div class="tab-content">
-        <div id="indiv" class="tab-pane fade in active">
-            <form class="forma">
+        <div id="indiv" class="tab-pane fade in active col-lg-12">
+            <form id="donirajForma" class="forma" onsubmit="onActionForm1(event)">
                 <span class="input input--hoshi">
 					<input class="input__field input__field--hoshi" type="text" id="input-1"/>
 					<label class="input__label input__label--hoshi input__label--hoshi-color-1" for="input-1">
 						<span class="input__label-content input__label-content--hoshi">Име :</span>
 					</label>
-				</span><br>
+				</span>
+                <br>
+                <h6 id="warning1" style="display:none;">Полето е задолжително!</h6>
                 <span class="input input--hoshi">
 					<input class="input__field input__field--hoshi" type="text" id="input-2"/>
 					<label class="input__label input__label--hoshi input__label--hoshi-color-1" for="input-2">
 						<span class="input__label-content input__label-content--hoshi">Презиме :</span>
 					</label>
-				</span><br>
+				</span>
+                <br>
+                <h6 id="warning2" style="display:none;">Полето е задолжително!</h6>
                 <span class="input input--hoshi">
 					<input class="input__field input__field--hoshi" type="number" id="input-3"/>
 					<label class="input__label input__label--hoshi input__label--hoshi-color-1" for="input-3">
 						<span class="input__label-content input__label-content--hoshi">Тел. Број :</span>
 					</label>
-				</span><br>
+				</span>
+                <br>
+                <h6 id="warning3" style="display:none;">Полето е задолжително!</h6>
                 <span class="input input--hoshi">
 					<input class="input__field input__field--hoshi" type="email" id="input-4"/>
 					<label class="input__label input__label--hoshi input__label--hoshi-color-1" for="input-4">
 						<span class="input__label-content input__label-content--hoshi">Е-Маил :</span>
 					</label>
-				</span><br>
+				</span>
+                <br>
+                <h6 id="warning4" style="display:none;">Полето е задолжително!</h6>
                 <br>
                 <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample"
                         aria-expanded="false" aria-controls="collapseExample">
                     Одбери датум
                 </button>
+
                 <div class="collapse" id="collapseExample">
                     <div class="well well-sm ">
                         <div class="list-group">
@@ -45,6 +57,7 @@
                         </div>
                     </div>
                 </div>
+                <h6 id="warning5" style="display:none;">Немате одбрано датум!</h6>
                 <br>
                 <br>
                 <label>Донирај :</label>
@@ -54,6 +67,7 @@
                 <div class="checkbox">
                     <label><input type="checkbox" id="kopceGot">Готова Храна</label>
                 </div>
+                <h6 id="warning6" style="display:none;">Немате донирано ништо!</h6>
                 <div id="listaNam">
                     <ul>
                         <li>
@@ -105,36 +119,40 @@
                     <button id="addHrana">Додади храна</button>
                 </div>
                 <br>
-                <button type="submit" class="btn btn-default" id="kopceForma1">Submit</button>
+                <button class="btn btn-default" id="kopceForma1">Submit</button>
             </form>
         </div>
-        <div id="komp" class="tab-pane fade">
-            <form class="forma">
+        <div id="komp" class="tab-pane fade col-lg-12">
+            <form class="forma" onsubmit="onActionForm2(event)">
                 <span class="input input--hoshi">
 					<input class="input__field input__field--hoshi" type="text" id="input-5"/>
 					<label class="input__label input__label--hoshi input__label--hoshi-color-1" for="input-5">
-						<span class="input__label-content input__label-content--hoshi">Име</span>
+						<span class="input__label-content input__label-content--hoshi">Име :</span>
 					</label>
 				</span><br>
+                <h6 id="warning7" style="display:none;">Полето е задолжително!</h6>
                 <span class="input input--hoshi">
 					<input class="input__field input__field--hoshi" type="text" id="input-6"/>
 					<label class="input__label input__label--hoshi input__label--hoshi-color-1" for="input-6">
-						<span class="input__label-content input__label-content--hoshi">Адреса</span>
+						<span class="input__label-content input__label-content--hoshi">Адреса :</span>
 					</label>
 				</span><br>
+                <h6 id="warning8" style="display:none;">Полето е задолжително!</h6>
                 <span class="input input--hoshi">
 					<input class="input__field input__field--hoshi" type="number" id="input-7"/>
 					<label class="input__label input__label--hoshi input__label--hoshi-color-1" for="input-7">
-						<span class="input__label-content input__label-content--hoshi">Тел. Број</span>
+						<span class="input__label-content input__label-content--hoshi">Тел. Број :</span>
 					</label>
 				</span><br>
+                <h6 id="warning9" style="display:none;">Полето е задолжително!</h6>
                 <span class="input input--hoshi">
 					<input class="input__field input__field--hoshi" type="email" id="input-8"/>
 					<label class="input__label input__label--hoshi input__label--hoshi-color-1" for="input-8">
-						<span class="input__label-content input__label-content--hoshi">Е-Маил</span>
+						<span class="input__label-content input__label-content--hoshi">Е-Маил :</span>
 					</label>
 				</span>
                 <br><br>
+                <h6 id="warning10" style="display:none;">Полето е задолжително!</h6>
                 <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#kalendar2"
                         aria-expanded="false" aria-controls="kalendar2">
                     Одбери датум
@@ -149,6 +167,7 @@
                     </div>
                 </div>
                 <br><br>
+                <h6 id="warning11" style="display:none;">Немате одбрано датум!</h6>
                 <label>Донирај :</label>
                 <div class="checkbox">
                     <label><input type="checkbox" value="" id="kopceNamKom">Намирници</label>
@@ -156,6 +175,7 @@
                 <div class="checkbox">
                     <label><input type="checkbox" value="" id="kopceGotKom">Готова Храна</label>
                 </div>
+                <h6 id="warning12" style="display:none;">Немате донирано ништо!</h6>
                 <div id="listaNamKom">
                     <ul>
                         <li>
@@ -212,25 +232,4 @@
         </div>
     </div>
 </div>
-<div id="myModal" class="modal fade" role="dialog">
-    <div class="modal-dialog">
 
-        <!-- Modal content-->
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal">&times;</button>
-                <h4 class="modal-title">Modal Header</h4>
-            </div>
-            <div class="modal-body">
-                <h5>Немате внесено :</h5><br>
-                <ul id="listModal">
-
-                </ul>
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-            </div>
-        </div>
-
-    </div>
-</div>

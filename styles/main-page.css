@@ -1,6 +1,6 @@
 /* Buttons */
 .btns-style {
-    color: wheat;
+    color: white;
     border-radius: 0px;
     width: 220px;
     height: 40px;
@@ -9,17 +9,33 @@
 
 .doniraj-btn {
     background-color: rgba(236, 240, 241, 0);
-    color: #fcf8e3;
+    color: white;
     border: 3px solid #c0392b;
+    -webkit-transition: background-color 0.5s; /* Safari */
+    -webkit-transition-timing-function: linear; /* Safari */
+    transition: background-color 0.5s ease;
 }
+
 
 .doniraj-btn:hover {
     background-color: #c0392b;
-    color: #fcf8e3;
+    color: white;
+}
+
+.doniraj-btn:active {
+    background-color: #d55244;
+}
+
+.zgotvi-btn:active{
+    background-color: #d55244;
 }
 
 .zgotvi-btn {
     background-color: #c0392b;
+    color:white;
+    -webkit-transition: background-color 0.5s; /* Safari */
+    -webkit-transition-timing-function: linear; /* Safari */
+    transition: background-color 0.5s ease;
 }
 
 .zgotvi-btn:hover {
@@ -37,8 +53,12 @@
     padding: 120px 150px 0px 150px;
 }
 
+.row {
+    margin-right:0px;
+    margin-left: 0px;
+}
 .row-position {
-    margin: 240px 0px 40px 30px;
+    margin: 240px 0px 0px 0px;
 }
 
 /* Steps */
@@ -56,27 +76,67 @@
     width: 160px;
     height: 130px;
     opacity: 0.8;
+    transition: all .2s ease-in-out;
 }
 
 .img-steps-style:hover {
-    zoom: 150%;
+    transform: scale(1.1);
+    /*zoom: 150%;*/
     opacity: 0.9;
 }
 
 
 .steps-title-style {
     font-size: 25px;
-    color: #ac2925;
+    color: rgba(0, 0, 0, 0.68);
     padding-left: 100px;
+    padding-top:30px;
 }
 
 /* Main image */
 .main-img {
     width: 100%;
-    height: 450px;
     opacity: 0.9;
     position: absolute;
     left: 0px;
     top: 0px;
     z-index: -1;
+}
+
+.btn.focus, .btn:focus, .btn:hover {
+    color:white;
+}
+
+button.btn.btns-style.zgotvi-btn{
+    outline:none;
+}
+
+button.btn.btns-style.doniraj-btn{
+    outline:none;
+}
+
+div#view {
+    margin-top: 50px;
+}
+
+body.container.body-backgroud {
+    margin:0px;
+    padding-top:0px;
+    padding-bottom:0px;
+    padding-left:0px;
+}
+
+@media (min-width: 1200px) {
+    .container {
+        width: 100%;
+    }
+}
+
+body.container.body-backgroud {
+    width: 100%;
+    padding-right: 0;
+}
+
+div#view {
+    text-align: center;
 }

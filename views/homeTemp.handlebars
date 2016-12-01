@@ -1,18 +1,25 @@
+
 <div class="row">
 <img src="img/background1.png" class="main-img">
-    <div class="buttons-group">
-      <div class="btn-postion">
-        <button href="#/donate" class="btn btns-style doniraj-btn">ДОНИРАЈ</button>
+    <div class="buttons-group container">
+      <div class="btn-postion row">
+        <a href="{{donateLink}}" class="btn btns-style doniraj-btn">
+            <i class="glyphicon glyphicon-heart"></i>
+            ДОНИРАЈ
+        </a>
       </div>
       <div>
-         <button href="#/cook" class="btn btns-style zgotvi-btn">ЗГОТВИ</button>
+          <a href="{{cookLink}}" class="row btn btns-style zgotvi-btn">
+              <i class="glyphicon glyphicon-cutlery"></i>
+              ЗГОТВИ
+         </a>
       </div>
     </div>
 </div>
-<div class="row row-position">
-    <div class="col-md-4 steps-title-style">
+<div class="row row-position" style="text-align: center;">
+    <h3 class="steps-title-style">
          Како функционираме?
-    </div>
+    </h3>
 </div>
 <div class="row imgs-pos">
         <div class="col-md-2">
@@ -35,4 +42,4 @@
             <img src="img/steps/5.png" class="img-steps-style" >
             <p class="step-txt">Сподели оброк</p>
         </div>
-    </div>
+</div>

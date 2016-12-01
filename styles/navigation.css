@@ -4,15 +4,15 @@
 }
 
 .nav-style {
-    background: #f1c40f;
+    background: #C0392B;
     border-radius:0px;
     border: none;
 }
 
-.logo-style {
-    width: 190px;
-    height: 30px;
-}
+/*.logo-style {*/
+    /*width: 190px;*/
+    /*height: 30px;*/
+/*}*/
 
 .logo-padding {
     padding-top: 8px;
@@ -33,10 +33,17 @@
     text-shadow: 0.3px 0.4px #34495e;
 }
 
+.nav>li>a{
+    -webkit-transition: background-color 0.5s; /* Safari */
+    -webkit-transition-timing-function: linear; /* Safari */
+    transition: background-color 0.5s ease;
+}
+
 .nav>li>a:focus,
 .nav>li>a:hover {
-    background-color: #f1c40f;
-    color: #34495e !important;
+    background-color: #5f5958;
+    opacity: 0.9;
+    color: white !important;
 }
 
 .row-color {
@@ -47,3 +54,64 @@
     margin: 0px;
 }
 
+.nav-item{
+    margin-right: 0px;
+}
+
+ul.nav.navbar-nav.pull-right.row.hidden-lg.hidden-md{
+    width:100%;
+}
+
+@media (max-width: 991px) {
+    .navbar-header {
+        float: none;
+    }
+    .navbar-toggle {
+        display: block;
+    }
+
+    .navbar-collapse {
+        border-top: 1px solid transparent;
+        box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+    }
+    .navbar-collapse.collapse {
+        display: none!important;
+    }
+    .navbar-nav {
+        float: none!important;
+        margin: 7.5px -15px;
+    }
+    .navbar-nav>li {
+        float: none;
+    }
+    .navbar-nav>li>a {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .navbar-text {
+        float: none;
+        margin: 15px 0;
+    }
+    /* since 3.1.0 */
+    .navbar-collapse.collapse.in {
+        display: block!important;
+    }
+    .collapsing {
+        overflow: hidden!important;
+    }
+}
+
+/* loader */
+.loader {
+    border: 16px solid #f3f3f3; /* Light grey */
+    border-top: 16px solid #3498db; /* Blue */
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}

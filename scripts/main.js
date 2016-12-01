@@ -1,8 +1,10 @@
 var mainContent = document.getElementById('view');
+// var loading = false;
 
 function init() {
     console.log('init');
     registerAllRoutes();
+    // loading = false;
 }
 
 function getTemplate(templateId) {
@@ -12,27 +14,29 @@ function getTemplate(templateId) {
 
     switch(templateId) {
         case "home":
+            data = getLinks();
             temp = Handlebars.templates['homeTemp'];
             break;
         case "about":
-            var data = getAboutUsData();
+            data = getAboutUsData();
             var temp = Handlebars.templates['aboutTemp'];
             break;
         case "gallery":
-            var data = getGalleryImages();
+            data = getGalleryImages();
             temp = Handlebars.templates['galleryTemp'];
             break;
         case "contact":
-            // no template for contact - for now
             temp = Handlebars.templates['contactTemp'];
             break;
         case "donate":
-            // no template for contact - for now
             temp = Handlebars.templates['addIngTemp'];
             break;
-        case "contact":
-            // no template for contact - for now
+        case "cook":
             temp = Handlebars.templates['cookTemp'];
+            break;
+        case "calendar":
+            data = getEventDates();
+            temp = Handlebars.templates['calendarTemp'];
             break;
         default:
             temp = Handlebars.templates['homeTemp'];
@@ -40,3 +44,13 @@ function getTemplate(templateId) {
 
     return temp(data);
 }
+
+// for hiding and showing elements
+// Handlebars.registerHelper('showFigure', function (src, options) {
+//     console.log('src: ' + src);
+//     return (src != null) ? '' : options.fn();
+// });
+
+$.ajaxSetup({
+    cache: true
+});

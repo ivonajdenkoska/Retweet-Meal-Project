@@ -5,39 +5,43 @@
     <title>Ретвитни оброк</title>
 
     <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css"/>
-    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-    <link rel="stylesheet" href="fonts/font-awesome-4.6.3/css/font-awesome.min.css"/>
+    <!--<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">-->
+    <!--<link rel="stylesheet" href="fonts/font-awesome-4.6.3/css/font-awesome.min.css"/>-->
    
     <link rel="stylesheet" href="styles/navigation.css"/>
     <link rel="stylesheet" href="styles/footer.css"/>
     <link rel="stylesheet" href="styles/main-page.css"/>
-    <link rel="stylesheet" href="styles/about.css"/>
-    <link rel="stylesheet" href="styles/gallery.css"/>
-
+    <link rel="stylesheet" href="styles/cook.css"/>
 
 </head>
-<body onload="init()" class="body-backgroud">
-    <div class="row-color">
-        <nav class="navbar row-margins-nav nav-style">
-            <div class="nav-padding">
+<body onload="init()" class="container body-backgroud">
+    <div class="row row-color">
+        <nav id="header" class="navbar navbar-fixed-top row-margins-nav nav-style">
+            <!--<div id="header-container" class="nav-padding navbar-container row">-->
                 <div class="navbar-header">
-                    <a class="navbar-brand logo-padding" href="">
-                        <img alt="Brand" src="./img/white-text-logo.png" class="logo-style">
+                    <a class="navbar-brand logo-padding" href="#/">
+                        <img alt="Brand" src="./img/white-text-logo-icon1.png">
+                    </a>
+                    <a class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="glyphicon glyphicon-chevron-down" style="color:white;font-size:7vh;"></span>
                     </a>
                 </div>
-                <div>
+                <div class="navbar-collapse collapse">
                     <ul class="nav navbar-nav pull-right">
-                        <li class="nav-item active-tab"><a href="#/about" class="nav-link-style">За нас</a></li>
-                        <li class="nav-item"><a href="#/calendar" class="nav-link-style">Календар на настани</a></li>
-                        <li class="nav-item"><a href="#/gallery" class="nav-link-style">Минати настани</a></li>
-                        <li class="nav-item"><a href="#/contact" class="nav-link-style">Контакт</a></li>
+                        <li class="nav-item active-tab "><a href="#/about" class="nav-link-style">За нас</a></li>
+                        <li class="nav-item "><a href="#/calendar" class="nav-link-style">Календар на настани</a></li>
+                        <li class="nav-item "><a href="#/gallery" class="nav-link-style">Галерија</a></li>
+                        <li class="nav-item "><a href="#/contact" class="nav-link-style">Контакт</a></li>
                     </ul>
                 </div>
-            </div>
+            <!--</div>-->
         </nav>
     </div>
-    <div id="view"></div>
-    <div>
+    <div class="row">
+        <div id="view" class="container">
+        </div>
+    </div>
+    <div class="row">
         <footer>
             <div class="row footer-style">
                 <div class="col-md-4 left-footer">
@@ -69,10 +73,16 @@
 
 <script src="scripts/main.js"></script>
 <script src="scripts/router.js"></script>
-    <script src="scripts/backend.js"></script>
-    <script src="scripts/cookScript.js"></script>
-    <script src="scripts/customScript.js"></script>
+<script src="scripts/backend.js"></script>
+<script src="scripts/customScript.js"></script>
+<script src="scripts/mappings.js"></script>
+<script src="scripts/calendar.js"></script>
+<script src="scripts/donate.js"></script>
 
+
+
+<!--views-->
+<!--<script src="precViews/home.js"></script>-->
 <script src="views/precompiledTmps.js"></script>
 </body>
 </html>

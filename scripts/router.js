@@ -40,13 +40,16 @@ var contentElement = null;
 
 function router () {
 
-    console.log('router');
+    console.log('router *******************************');
     contentElement = contentElement || document.getElementById('view');
     var url = location.hash.slice(1) || '/';
     var route = routes[url];
 
+
     if (contentElement && route) {
+
         var filledTemplate = getTemplate(route.tmpId);
+
         contentElement.innerHTML = filledTemplate;
         // contentElement.addEventListener('click',
         //     function(event) {
