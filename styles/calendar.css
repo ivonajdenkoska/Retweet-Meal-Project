@@ -1,0 +1,56 @@
+.table > tbody + tbody {
+     border: 2px solid #ddd;
+ }
+
+.calendar-cell {
+    border: 1px solid gray;
+    padding: 10px;
+}
+
+table {
+    table-layout: fixed;
+    empty-cells: show;
+    text-align: center;
+}
+
+thead {
+    text-align: center;
+}
+
+td {
+    width: 100px;
+    height: 100px
+}
+
+#title {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+#month {
+    font-size: 20px;;
+}
+
+
+
+body { padding: 1em; }
+* { box-sizing: border-box; -moz-box-sizing: border-box; }
+.grid { border: 1px solid gray; }
+.row { overflow: auto; }
+
+.cell {
+    width: 20%;
+    float: left;
+    border: 1px solid gray;
+    padding: 1em;
+}
+
+.row-calendar{
+    padding-bottom: 30px;
+}
+
+.data-cell:hover{
+    background-color: darkred;
+    color:white;
+}

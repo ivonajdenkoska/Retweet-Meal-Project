@@ -1,0 +1,12 @@
+(function() {
+  var template = Handlebars.template, templates = Handlebars.templates = Handlebars.templates || {};
+templates['homeTemp'] = template({"compiler":[7,">= 4.0.0"],"main":function(container,depth0,helpers,partials,data) {
+    var helper, alias1=depth0 != null ? depth0 : {}, alias2=helpers.helperMissing, alias3="function", alias4=container.escapeExpression;
+
+  return "<div class=\"row\">\r\n<img src=\"img/background1.png\" class=\"main-img\">\r\n    <div class=\"buttons-group container\">\r\n      <div class=\"btn-postion row\">\r\n        <a href=\""
+    + alias4(((helper = (helper = helpers.donateLink || (depth0 != null ? depth0.donateLink : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"donateLink","hash":{},"data":data}) : helper)))
+    + "\" class=\"btn btns-style doniraj-btn\">\r\n            <i class=\"glyphicon glyphicon-heart\"></i>\r\n            ДОНИРАЈ\r\n        </a>\r\n      </div>\r\n      <div>\r\n          <a href=\""
+    + alias4(((helper = (helper = helpers.cookLink || (depth0 != null ? depth0.cookLink : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"cookLink","hash":{},"data":data}) : helper)))
+    + "\" class=\"row btn btns-style zgotvi-btn\">\r\n              <i class=\"glyphicon glyphicon-cutlery\"></i>\r\n              ЗГОТВИ\r\n         </a>\r\n      </div>\r\n    </div>\r\n</div>\r\n<div class=\"row row-position\" style=\"text-align: center;\">\r\n    <h3 class=\"steps-title-style\">\r\n         Како функционираме?\r\n    </h3>\r\n</div>\r\n<div class=\"row imgs-pos\">\r\n        <div class=\"col-md-2\">\r\n            <img src=\"img/steps/1.png\" class=\"img-steps-style\" >\r\n            <p class=\"step-txt\">Пријави се</p>\r\n        </div>\r\n        <div class=\"col-md-2\">\r\n            <img src=\"img/steps/2.png\" class=\"img-steps-style\" >\r\n            <p class=\"step-txt\">Подготви ги намирниците</p>\r\n        </div>\r\n        <div class=\"col-md-2\">\r\n            <img src=\"img/steps/3.png\" class=\"img-steps-style\" >\r\n            <p class=\"step-txt\">Донирај</p>\r\n        </div>\r\n        <div class=\"col-md-2\">\r\n            <img src=\"img/steps/4.png\" class=\"img-steps-style\" >\r\n            <p class=\"step-txt\">Зготви</p>\r\n        </div>\r\n        <div class=\"col-md-2\">\r\n            <img src=\"img/steps/5.png\" class=\"img-steps-style\" >\r\n            <p class=\"step-txt\">Сподели оброк</p>\r\n        </div>\r\n</div>";
+},"useData":true});
+})();
