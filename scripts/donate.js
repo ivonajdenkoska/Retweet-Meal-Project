@@ -130,5 +130,5 @@ function onActionForm2(event) {
         else
             $("#warning12").hide();
 
-    }s
+    }
 }

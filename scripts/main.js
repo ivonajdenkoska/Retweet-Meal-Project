@@ -51,6 +51,34 @@ function getTemplate(templateId) {
 //     return (src != null) ? '' : options.fn();
 // });
 
+$('#arr-go-down').on('click', function(e){
+
+});
+
+function findOutAboutDonation() {
+    var targetElement = $('#steps-images');
+    console.log(targetElement.offset());
+    $('body').stop().animate({
+        scrollTop: targetElement.offset().top - 200
+    }, 1000);
+}
+
+function findOutAboutComunity() {
+    var targetElement = $('#wrapper');
+    console.log(targetElement.offset());
+    $('body').stop().animate({
+        scrollTop: targetElement.offset().top - 200
+    }, 1000);
+}
+
+function goToStart() {
+    var targetElement = $('#view');
+    console.log(targetElement.offset());
+    $('body').stop().animate({
+        scrollTop: targetElement.offset().top - 200
+    }, 1000);
+}
+
 $.ajaxSetup({
     cache: true
 });

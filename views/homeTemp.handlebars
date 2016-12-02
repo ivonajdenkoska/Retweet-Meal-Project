@@ -1,6 +1,5 @@
-
-<div class="row">
-<img src="img/background1.png" class="main-img">
+<div>
+<img src="img/background1.png" class="main-img hidden-xs">
     <div class="buttons-group container">
       <div class="btn-postion row">
         <a href="{{donateLink}}" class="btn btns-style doniraj-btn">
@@ -8,8 +7,8 @@
             ДОНИРАЈ
         </a>
       </div>
-      <div>
-          <a href="{{cookLink}}" class="row btn btns-style zgotvi-btn">
+      <div class="row">
+          <a href="{{cookLink}}" class="btn btns-style zgotvi-btn">
               <i class="glyphicon glyphicon-cutlery"></i>
               ЗГОТВИ
          </a>
@@ -18,28 +17,70 @@
 </div>
 <div class="row row-position" style="text-align: center;">
     <h3 class="steps-title-style">
-         Како функционираме?
+         Како #ретвитниОброк функционира? <br/>
     </h3>
+    <i class="glyphicon glyphicon-circle-arrow-down arr-go-down" onclick="findOutAboutDonation()"></i>
+    <!--<hr class="divider"/>-->
 </div>
-<div class="row imgs-pos">
-        <div class="col-md-2">
+
+<div class="row">
+</div>
+
+<div id="steps-images" class="container imgs-pos">
+    <div class="row">
+        <div class="col-md-4 zoom-objs" id="s1">
             <img src="img/steps/1.png" class="img-steps-style" >
-            <p class="step-txt">Пријави се</p>
+            <p class="step-txt">1. Пријави се</p>
         </div>
-        <div class="col-md-2">
+        <div class="col-md-4 zoom-objs" id="s2">
             <img src="img/steps/2.png" class="img-steps-style" >
-            <p class="step-txt">Подготви ги намирниците</p>
+            <p class="step-txt">2. Подготви ги намирниците</p>
         </div>
-        <div class="col-md-2">
+        <div class="col-md-4 zoom-objs" id="s3">
             <img src="img/steps/3.png" class="img-steps-style" >
-            <p class="step-txt">Донирај</p>
+            <p class="step-txt">3. Донирај</p>
         </div>
-        <div class="col-md-2">
-            <img src="img/steps/4.png" class="img-steps-style" >
-            <p class="step-txt">Зготви</p>
+    </div>
+       <div class="row">
+           <div class="col-md-2"></div>
+           <div class="col-md-4 zoom-objs" id="s4">
+               <img src="img/steps/4.png" class="img-steps-style" >
+               <p class="step-txt">2-3. Зготви</p>
+           </div>
+           <div class="col-md-4 zoom-objs" id="s5">
+               <img src="img/steps/5.png" class="img-steps-style" >
+               <p class="step-txt">2-4. Сподели оброк</p>
+           </div>
+           <div class="col-md-2"></div>
+       </div>
+
+</div>
+
+<div class="row" style="text-align: center;">
+    <h3 class="steps-title-style">
+        Нашата заедница <span style="font-weight: bolder;">РАСТЕ</span>!
+    </h3>
+    <i class="glyphicon glyphicon-circle-arrow-down arr-go-down" onclick="findOutAboutComunity()"></i>
+    <!--<hr class="divider"/>-->
+</div>
+
+<div id="wrapper">
+
+    <div class="container">
+
+        <div class="row">
+            <div class="col-md-6">
+                <div id="chart2">
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div id="chart">
+                </div>
+            </div>
         </div>
-        <div class="col-md-2">
-            <img src="img/steps/5.png" class="img-steps-style" >
-            <p class="step-txt">Сподели оброк</p>
-        </div>
+        <!-- /.row -->
+
+    </div>
+    <!-- /.container -->
+
 </div>

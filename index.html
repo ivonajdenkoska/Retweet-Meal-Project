@@ -5,17 +5,16 @@
     <title>Ретвитни оброк</title>
 
     <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css"/>
-<<<<<<< HEAD
-    <!--<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">-->
-    <!--<link rel="stylesheet" href="fonts/font-awesome-4.6.3/css/font-awesome.min.css"/>-->
-   
+    <link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet">
+
     <link rel="stylesheet" href="styles/navigation.css"/>
     <link rel="stylesheet" href="styles/footer.css"/>
     <link rel="stylesheet" href="styles/main-page.css"/>
     <link rel="stylesheet" href="styles/cook.css"/>
-=======
+
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <link rel="stylesheet" href="fonts/font-awesome-4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="bower_components/c3/c3.min.css"/>
 
     <link rel="stylesheet" href="styles/navigation.css"/>
     <link rel="stylesheet" href="styles/footer.css"/>
@@ -25,10 +24,11 @@
 
     <link rel="stylesheet" href="styles/set1.css"/>
 
->>>>>>> origin/master
 
 </head>
 <body onload="init()" class="container body-backgroud">
+<div id="fb-root"></div>
+
     <div class="row row-color">
         <nav id="header" class="navbar navbar-fixed-top row-margins-nav nav-style">
             <!--<div id="header-container" class="nav-padding navbar-container row">-->
@@ -37,15 +37,15 @@
                         <img alt="Brand" src="./img/white-text-logo-icon1.png">
                     </a>
                     <a class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                        <span class="glyphicon glyphicon-chevron-down" style="color:white;font-size:7vh;"></span>
+                        <span class="glyphicon glyphicon-chevron-down" style="color:white;font-size:3vh;"></span>
                     </a>
                 </div>
                 <div class="navbar-collapse collapse">
                     <ul class="nav navbar-nav pull-right">
-                        <li class="nav-item active-tab "><a href="#/about" class="nav-link-style">За нас</a></li>
-                        <li class="nav-item "><a href="#/calendar" class="nav-link-style">Календар на настани</a></li>
-                        <li class="nav-item "><a href="#/gallery" class="nav-link-style">Галерија</a></li>
-                        <li class="nav-item "><a href="#/contact" class="nav-link-style">Контакт</a></li>
+                        <li class="nav-item active-tab "><a href="#/about" class="nav-link-style">ЗА НАС</a></li>
+                        <li class="nav-item "><a href="#/calendar" class="nav-link-style">КАЛЕНДАР</a></li>
+                        <li class="nav-item "><a href="#/gallery" class="nav-link-style">ГАЛЕРИЈА</a></li>
+                        <li class="nav-item "><a href="#/contact" class="nav-link-style">КОНТАКТ</a></li>
                     </ul>
                 </div>
             <!--</div>-->
@@ -57,26 +57,44 @@
     </div>
     <div class="row">
         <footer>
-            <div class="row footer-style">
-                <div class="col-md-4 left-footer">
-                    Copyrights &copy; Team 7 <br/>
-                    Faculty of Computer Science and Engineering
+            <div class="footer-style" style="padding-top:40px; padding-bottom:30px;">
+                <div class="row" style="text-align: right; margin-right: 5vh;">
+                    <i class="glyphicon glyphicon-chevron-up" style="font-size: 3vh; color:white; cursor:pointer;" onclick="goToStart()"></i>
                 </div>
-                <div class="col-md-4">
-                    <ul class="footer-menu">
-                        <li class="nav-item active-tab"><a href="#/about" class="nav-link-style">За нас</a></li>
-                        <li class="nav-item"><a href="#/calendar" class="nav-link-style">Календар на настани</a></li>
-                        <li class="nav-item"><a href="#/gallery" class="nav-link-style">Минати настани</a></li>
-                        <li class="nav-item"><a href="#/contact" class="nav-link-style">Контакт</a></li>
-                    </ul>
-                </div>
-                <div class="col-md-4">
-                    <div class="icons">
-                        <a href="#"><i class="fa fa-facebook-official icon-style"></i></a>
-                        <a href="#"><i class="fa fa-twitter-square icon-style"></i></a>
-                        <a href="#"><i class="fa fa-linkedin-square icon-style"></i></a>
+                <div class="row">
+                    <div class="col-md-4 col-sm-12 col-xs-12 " style="color:white; text-align:center; ">
+                        <span style="font-weight: bold;display: block;"> Контакт:</span>
+                        <span class="contact"> &nbsp; Мила Тасевска </span>
+                        <span class="contact"> &nbsp; Злата Голабоска </span>
+                        <span class="contact"> &nbsp; Љубомир Стојчески </span>
+                        <span style="font-weight: bold;display: block;"> Електронска адреса:</span>
+                        <span class="contact"> &nbsp; retvitniobrok@gmail.com </span>
+                    </div>
+                    <br>
+                    <div class="col-md-6 hidden-sm hidden-xs left-footer">
+                        <a href="https://www.youtube.com/watch?v=5wK-91qR4Ps" class="link zoom-objs">
+                            <i class="glyphicon glyphicon-facetime-video"></i>
+                            Ретвитни оброк - Заедничко готвење </a> <br>
+                        <a href="https://www.youtube.com/watch?v=1QGQc_7MYgw" class="link zoom-objs">
+                            <i class="glyphicon glyphicon-facetime-video"></i>
+                            Ретвитни оброк - ТВ НОВА 10.06.2016 </a>
+                    </div>
+                    <div class="col-md-2 col-sm-12 col-xs-12" style="text-align:center;">
+                        <div class="footer-social-icons" style="text-align:left;">
+                            <span class="follow-us"> следете нè: </span>
+                            <ul class="social-icons pull-left">
+                                <li><a href="https://www.facebook.com/groups/761014504020194/" class="social-icon"> <i class="fa fa-facebook"></i></a></li>
+                                <li><a href="https://twitter.com/hashtag/%D1%80%D0%B5%D1%82%D0%B2%D0%B8%D1%82%D0%BD%D0%B8%D0%BE%D0%B1%D1%80%D0%BE%D0%BA" class="social-icon"> <i class="fa fa-twitter"></i></a></li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
+
+            <div class="row" style="color:white; text-align:center;">
+                Copyrights &copy; Team 7
+                Faculty of Computer Science and Engineering
+            </div>
+
             </div>
         </footer>
     </div>
@@ -84,6 +102,8 @@
 <script src="bower_components/handlebars/handlebars.min.js"></script>
 <script src="bower_components/jquery/dist/jquery.min.js"></script>
 <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="bower_components/c3/c3.min.js"></script>
+<script src="bower_components/d3/d3.min.js"></script>
 
 <script src="scripts/main.js"></script>
 <script src="scripts/router.js"></script>
@@ -92,7 +112,7 @@
 <script src="scripts/mappings.js"></script>
 <script src="scripts/calendar.js"></script>
 <script src="scripts/donate.js"></script>
-
+<script src="scripts/admin.js"></script>
 
 
 <!--views-->

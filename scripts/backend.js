@@ -42,6 +42,12 @@ function getEventDates() {
     var firstDayDate = getFirstDayDateFromCurrentMonth();
     var monthObj = months[currentMonth];
 
+    /*
+    * Legenda:
+    * meal donation: 0
+    * ingredients donation: 1
+    * meal preparation: 2
+    * */
     var data = {
         currentMonth: {
             name: monthObj.name,
@@ -54,51 +60,51 @@ function getEventDates() {
         },
         events: [
             {
-                type: "mealDonation",
+                type: 0,
                 time: "11:30",
-                date: "2016-12-01T23:00:00.000Z",
-                city: "Skopje",
-                community: "Centar",
-                place: "Majka Tereza"
+                date: "2 12 2016",
+                city: "Скопје",
+                community: "Центар",
+                place: "Мајка Тереза"
             },
             {
-                type: "mealPrep",
+                type: 2,
                 time: "18:30",
-                date: "2016-11-01T23:00:00.000Z",
-                city: "Skopje",
-                community: "Vodno",
+                date: "2 11 2016",
+                city: "Скопје",
+                community: "Водно",
                 place: "HUB"
             },
             {
-                type: "ingrDonation",
+                type: 1,
                 time: "17:00 - 18:00",
-                date: "2016-11-01T23:00:00.000Z",
-                city: "Skopje",
-                community: "Vodno",
+                 date: "2 11 2016",
+                city: "Скопје",
+                community: "Водно",
                 place: "HUB"
             },
             {
-                type: "mealDonation",
+                type: 0,
                 time: "11:30",
-                date: "2016-12-05T23:00:00.000Z",
-                city: "Skopje",
-                community: "Aerodrom",
-                place: "Capitol"
+                date: "6 12 2016",
+                city: "Скопје",
+                community: "Аеродром",
+                place: "МЗТ Сала"
             },
             {
-                type: "mealPrep",
+                type: 2,
                 time: "18:30",
-                date: "2016-11-04T23:00:00.000Z",
-                city: "Skopje",
-                community: "Vodno",
+                date: "5 11 2016",
+                city: "Скопје",
+                community: "Водно",
                 place: "HUB"
             },
             {
-                type: "ingrDonation",
+                type: 1,
                 time: "17:00 - 18:00",
-                date: "2016-11-04T23:00:00.000Z",
-                city: "Skopje",
-                community: "Vodno",
+                date: "5 11 2016",
+                city: "Скопје",
+                community: "Водно",
                 place: "HUB"
             }
         ]

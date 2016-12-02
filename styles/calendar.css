@@ -11,6 +11,7 @@ table {
     table-layout: fixed;
     empty-cells: show;
     text-align: center;
+    font-weight: bold;
 }
 
 thead {
@@ -18,20 +19,30 @@ thead {
 }
 
 td {
-    width: 100px;
-    height: 100px
+    width: 90px;
+    height: 90px
+
 }
 
 #title {
-    text-align: center;
-    margin-top: 30px;
+    text-align: right;
     margin-bottom: 10px;
+    font-weight: bold;
 }
 
 #month {
     font-size: 20px;;
 }
 
+.container{
+    position: relative;
+}
+
+.row-date{
+    position: absolute;
+    top: 2px;
+    left: 5px;
+}
 
 
 body { padding: 1em; }
@@ -40,7 +51,7 @@ body { padding: 1em; }
 .row { overflow: auto; }
 
 .cell {
-    width: 20%;
+    /*width: 20%;*/
     float: left;
     border: 1px solid gray;
     padding: 1em;
@@ -50,7 +61,63 @@ body { padding: 1em; }
     padding-bottom: 30px;
 }
 
-.data-cell:hover{
-    background-color: darkred;
+.data-cell-0{
+    background-color: #00aced;
     color:white;
+    cursor:pointer;
+}
+
+.data-cell-1{
+    background-color: #eb4533;
+    color:white;
+    cursor:pointer;
+}
+
+.data-cell-2 {
+    background-color: #ed8922;
+    color:white;
+    cursor: pointer;
+}
+.data-cell:hover{
+    /*background-color: #424242;*/
+    /*color:white;*/
+}
+
+.list-group-item:hover{
+    /*background-color: #424242;*/
+    /*color:white;*/
+}
+
+thead {
+    color: white;
+    background-color: #424242;
+}
+
+tbody {
+    background-color: white;
+}
+
+#first:hover {
+    background-color: #424242;
+    color:white;
+}
+
+#second:hover {
+    background-color: #333;
+    color:white;
+}
+
+#third:hover {
+    background-color: #333;
+    color:white;
+}
+
+.list-group-item{
+    cursor:pointer;
+    font-weight: bold;
+}
+
+h1#month {
+    text-align: center;
+    font-size: 7vh;
 }

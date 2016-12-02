@@ -2,36 +2,71 @@
 
 <div class="container">
     <div id="title" class="row">
-        <!--<i class="glyphicon glyphicon-triangle-left"></i>-->
-        <label id="month">{{currentMonth.name}}</label>
+        <!--<i class="glyphicon glyphicon-triangle-left" onclick="getPrevMonth()"></i>-->
+        <h1 style="opacity: 0.5;font-weight: bolder;" id="month">#за{{currentMonth.name}}</h1>
         <!--<i class="glyphicon glyphicon-triangle-right"></i>-->
     </div>
     <div class="row row-calendar">
         <ul class="list-group col-md-2">
-            <li class="list-group-item">First item</li>
-            <li class="list-group-item">Second item</li>
-            <li class="list-group-item">Third item</li>
+            <li class="list-group-item">ЛЕГЕНДА</li>
+            <li class="list-group-item data-cell-0">ДОНАЦИЈА НА ОБРОЦИ</li>
+            <li class="data-cell-1 list-group-item">ДОНАЦИЈА НА НАМИРНИЦИ</li>
+            <li class="data-cell-2 list-group-item">СОБИР ЗА ГОТВЕЊЕ</li>
+
         </ul>
         <table class="col-md-10">
             <thead>
             <tr>
-                <th class="calendar-cell">Пон</th>
-                <th class="calendar-cell">Вто</th>
-                <th class="calendar-cell">Сре</th>
-                <th class="calendar-cell">Чет</th>
-                <th class="calendar-cell">Пет</th>
-                <th class="calendar-cell">Саб</th>
-                <th class="calendar-cell">Нед</th>
+                <th class="calendar-cell">ПОН</th>
+                <th class="calendar-cell">ВТО</th>
+                <th class="calendar-cell">СРЕ</th>
+                <th class="calendar-cell">ЧЕТ</th>
+                <th class="calendar-cell">ПЕТ</th>
+                <th class="calendar-cell">САБ</th>
+                <th class="calendar-cell">НЕД</th>
             </tr>
             </thead>
             <tbody>
             {{#rows}}
                <tr>
+                   <div>
                {{#row}}
-                   <td class="calendar-cell data-cell">
-                       {{date}}
+                   <td class="container calendar-cell data-cell">
+                       <div>
+                           <div class="row row-date">{{date}}</div>
+                        {{#hasEvent realDate}}
+
+                            <!-- THIS CELL HAS EVENT -->
+                            <div class="row row-data data-cell-{{event.type}}"  data-toggle="modal" data-target="#{{event.date}}">
+                                {{event.place}}, {{event.community}}
+                            </div>
+
+                            <!-- Modal -->
+                            <div class="modal fade" id="{{event.date}}" role="dialog">
+                                <div class="modal-dialog modal-sm">
+
+                                    <!-- Modal content-->
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                            <h4 class="modal-title">Детални информации за настанот:</h4>
+                                        </div>
+                                        <div class="modal-body">
+                                            <span>Тип на настан:
+                                                {{#getEventType event}}
+                                                {{/getEventType}}
+                                            </span>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        {{/hasEvent}}
+                       </div>
                    </td>
+
                {{/row}}
+                   </div>
                </tr>
             {{/rows}}
             </tbody>
