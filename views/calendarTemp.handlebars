@@ -2,9 +2,9 @@
 
 <div class="container">
     <div id="title" class="row">
-        <!--<i class="glyphicon glyphicon-triangle-left" onclick="getPrevMonth()"></i>-->
+        <!--<i class="glyphicon glyphicon-triangle-left" style="opacity: 0.5;font-weight: bolder;" onclick="goPrevMonth({{currentMonth}})"></i>-->
         <h1 style="opacity: 0.5;font-weight: bolder;" id="month">#за{{currentMonth.name}}</h1>
-        <!--<i class="glyphicon glyphicon-triangle-right"></i>-->
+        <!--<i class="glyphicon glyphicon-triangle-right" style="opacity: 0.5;font-weight: bolder;"></i>-->
     </div>
     <div class="row row-calendar">
         <ul class="list-group col-md-2">
@@ -35,32 +35,41 @@
                        <div>
                            <div class="row row-date">{{date}}</div>
                         {{#hasEvent realDate}}
+                            {{#events}} <!-- za sekoj event pronajden vo baza -->
+                                <!-- THIS CELL HAS EVENT -->
+                                <div class="row row-data data-cell-{{event.type}}"  data-toggle="modal" data-target="#{{event.id}}">
+                                    {{event.place}}, {{event.community}}
+                                </div>
 
-                            <!-- THIS CELL HAS EVENT -->
-                            <div class="row row-data data-cell-{{event.type}}"  data-toggle="modal" data-target="#{{event.date}}">
-                                {{event.place}}, {{event.community}}
-                            </div>
+                                <!-- Modal -->
+                                <div class="modal fade" id="{{event.id}}" role="dialog">
+                                    <div class="modal-dialog modal-sm">
 
-                            <!-- Modal -->
-                            <div class="modal fade" id="{{event.date}}" role="dialog">
-                                <div class="modal-dialog modal-sm">
-
-                                    <!-- Modal content-->
-                                    <div class="modal-content">
-                                        <div class="modal-header">
-                                            <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                            <h4 class="modal-title">Детални информации за настанот:</h4>
-                                        </div>
-                                        <div class="modal-body">
-                                            <span>Тип на настан:
+                                        <!-- Modal content-->
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                                <h4 class="modal-title" style="font-weight: bolder;font-size: larger;">Детални информации за настанот:</h4>
+                                            </div>
+                                            <div class="modal-body">
+                                            <span style="font-weight: bolder;">Тип на настан:
                                                 {{#getEventType event}}
                                                 {{/getEventType}}
-                                            </span>
-                                        </div>
-                                    </div>
+                                            </span><br>
+                                                <span style="font-weight: bolder;">Време:
+                                                    {{event.time}}</span><br>
+                                                <span style="font-weight: bolder;">Датум:
+                                                    {{event.date}}</span><br>
+                                                <span style="font-weight: bolder;">Место:
+                                                    {{event.place}}, {{event.community}}, {{event.city}}</span>
 
+                                            </div>
+                                        </div>
+
+                                    </div>
                                 </div>
-                            </div>
+                            {{/events}}
+
                         {{/hasEvent}}
                        </div>
                    </td>

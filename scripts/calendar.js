@@ -83,6 +83,17 @@ function getRow(row, dateCounter) {
     return data;
 }
 
+function goPrevMonth(month) {
+    var prevMont = months[(month - 1)%12];
+    var m =
+    {
+        month: {
+            name: monthObj.name,
+            ordinalNum: monthObj.ord
+        }
+    }
+    return m;
+}
 
 Handlebars.registerHelper('getCellDate', function(
     position,
@@ -100,20 +111,27 @@ Handlebars.registerHelper('hasEvent', function (date, options) {
     var found = false;
     var i;
     var theEvent = null;
+    var theEvents = [];
 
     for(i = 0; i < events.length; i++) {
         var event = events[i];
         if (event.date == date) {
             theEvent = event;
+            theEvents.push({
+                event: theEvent
+            });
+            // theEvent = event;
             found = true;
-            break;
+            // break;
         }
     }
 
-    return (found) ? options.fn({ event: theEvent }) : '';
+    console.dir(theEvents);
+    return (found) ? options.fn({ events: theEvents}) : '';
 });
 
 Handlebars.registerHelper('getEventType', function (event) {
+
     if (event.type == 0) {
         return "Донација на оброци";
     } else if (event.type == 1) {

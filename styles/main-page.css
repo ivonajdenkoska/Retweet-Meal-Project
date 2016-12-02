@@ -33,10 +33,9 @@ a.nav-link-style{
     }
 
     .doniraj-btn:hover{
-        background-color: #d55244;
+        background-color: #fe6254;
     }
 }
-
 /* tablet */
 @media (min-width: 768px) {
     .btns-style {
@@ -63,9 +62,9 @@ a.nav-link-style{
 /* desktop */
 @media (min-width: 992px) {
     .btns-style {
-        width: 220px;
-        height: 40px;
-        font-size:16px;
+        width: 250px;
+        height: 60px;
+        font-size: 20px;
     }
 
     .row-position {
@@ -95,7 +94,6 @@ a.nav-link-style{
         transition: background-color 0.5s ease;
     }
 }
-
 
 
 .doniraj-btn:hover,
@@ -414,4 +412,14 @@ ul.social-icons.pull-left {
 .link:hover {
     color: white;
     zoom:150%;
+}
+
+a.btn.btns-style.doniraj-btn {
+    padding-top: 15px;
+    padding-right: 15px;
+}
+
+a.btn.btns-style.zgotvi-btn {
+    padding-top: 15px;
+    padding-right: 15px;
 }

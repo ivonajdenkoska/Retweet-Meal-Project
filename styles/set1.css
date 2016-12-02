@@ -182,7 +182,7 @@
 }
 
 .input__label--hoshi-color-1::after {
-    border-color: hsl(200, 100%, 50%);
+    border-color: hsl(155.8,63.4%,46.1%);          /*hsl(200, 100%, 50%);*/
 }
 
 .input__label--hoshi-color-2::after {
@@ -1100,15 +1100,15 @@
     opacity: 0;
     -webkit-transform: translate3d(0, -50%, 0);
     transform: translate3d(0, -50%, 0);
-<<<<<<< HEAD
 }
 
 li {
     list-style: none;
 }
 
-#tableNam, #tableNamKom{
+#tableNam, #tableNamKom, #tableGot, #tableGotKom{
     width: 900px;
+    margin: auto;
 }
 tr {
     width: 800px;
@@ -1125,6 +1125,17 @@ tr {
     color: red;
     font-weight: bold;
 }
-=======
+#listaTabovi{
+    padding-top: 10px;
 }
->>>>>>> origin/master
+#tab1, #tab2{
+    background-color: hsl(155.8,63.4%,46.1%);
+    color: white;
+}
+#tab1:hover, #tab2:hover{
+    background-color: #333;
+}
+.activeDate{
+    background-color: green;
+    color:white;
+}

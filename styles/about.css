@@ -77,4 +77,8 @@
     /* inline-block space fix */
     margin-right:-4px;
 }
+.container.main-padding {
+    padding-left: 200px;
+}
+
 

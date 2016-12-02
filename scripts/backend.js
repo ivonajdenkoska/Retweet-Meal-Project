@@ -36,6 +36,8 @@ function getCurrentMonth() {
     var currentMonth = currentDate.getMonth();
     return currentMonth;
 }
+
+// by default
 function getEventDates() {
 
     var currentMonth = getCurrentMonth();
@@ -60,6 +62,7 @@ function getEventDates() {
         },
         events: [
             {
+                id: 1,
                 type: 0,
                 time: "11:30",
                 date: "2 12 2016",
@@ -68,6 +71,7 @@ function getEventDates() {
                 place: "Мајка Тереза"
             },
             {
+                id: 2,
                 type: 2,
                 time: "18:30",
                 date: "2 11 2016",
@@ -76,6 +80,7 @@ function getEventDates() {
                 place: "HUB"
             },
             {
+                id:3,
                 type: 1,
                 time: "17:00 - 18:00",
                  date: "2 11 2016",
@@ -84,6 +89,7 @@ function getEventDates() {
                 place: "HUB"
             },
             {
+                id:4,
                 type: 0,
                 time: "11:30",
                 date: "6 12 2016",
@@ -92,20 +98,40 @@ function getEventDates() {
                 place: "МЗТ Сала"
             },
             {
+                id:5,
                 type: 2,
                 time: "18:30",
-                date: "5 11 2016",
+                date: "5 12 2016",
                 city: "Скопје",
                 community: "Водно",
                 place: "HUB"
             },
             {
+                id:6,
                 type: 1,
                 time: "17:00 - 18:00",
-                date: "5 11 2016",
+                date: "5 12 2016",
                 city: "Скопје",
                 community: "Водно",
                 place: "HUB"
+            },
+            {
+                id:7,
+                type: 1,
+                time: "17:00 - 18:00",
+                date: "9 12 2016",
+                city: "Скопје",
+                community: "Карпош",
+                place: "Кино Карпош"
+            },
+            {
+                id:8,
+                type: 2,
+                time: "10:00 - 15:00",
+                date: "8 12 2016",
+                city: "Скопје",
+                community: "Карпош",
+                place: "Кино Карпош"
             }
         ]
     };
