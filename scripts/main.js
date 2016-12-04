@@ -34,10 +34,10 @@ function getTemplate(templateId) {
             data = getGalleryImages();
             temp = Handlebars.templates['galleryTemp'];
             break;
-        case "contact":
-            goUp();
-            temp = Handlebars.templates['contactTemp'];
-            break;
+        // case "contact":
+        //     goUp();
+        //     temp = Handlebars.templates['contactTemp'];
+        //     break;
         case "donate":
             goUp();
             data = getEventDates();

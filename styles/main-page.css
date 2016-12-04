@@ -45,7 +45,7 @@ a.nav-link-style{
     }
 
     .row-position {
-        margin: 140px 0px 0px 0px;
+        margin: 180px 0px 0px 0px;
     }
 
 
@@ -62,13 +62,13 @@ a.nav-link-style{
 /* desktop */
 @media (min-width: 992px) {
     .btns-style {
-        width: 250px;
+        width: 200px;
         height: 60px;
         font-size: 20px;
     }
 
     .row-position {
-        margin: 240px 0px 0px 0px;
+        margin: 180px 0px 0px 0px;
     }
 
 
@@ -422,4 +422,8 @@ a.btn.btns-style.doniraj-btn {
 a.btn.btns-style.zgotvi-btn {
     padding-top: 15px;
     padding-right: 15px;
+}
+
+.list-group-item {
+    font-weight: bolder;
 }
